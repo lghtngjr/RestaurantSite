@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Site</title>
+    </head>
+    <body>
+        <div style="text-align: center"><h1>Bill's Burgers & BBQ</h1></div>
+        <hr/>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contactus.html">Contact Us</a>
+        <hr/>
+        <form style="text-align: center" action="contactus" method="post">
+            <div>
+                <label id="NameLabel" for="Name">Name: </label>
+                <input id="Name" name="Name" type="text"/>
+            </div><br/>
+            <div>
+                    <label id="EmailLabel" for="Email">Email: </label>
+                    <input id="Email" name="Email" type="text"/>
+                </div><br/>
+            <div>
+                  <label id="PhoneLabel" for="Phone">Phone: </label>
+                   <input id="Phone" name="Phone" type="text"/>
+                </div><br/> 
+            <div>
+                <label id="ReasonLabel" for="Reason">Reason for Inquiry:    </label>
+                <select name="reason">
+                    <option value="Catering">Catering</option>
+                    <option value="PrivateParty">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div><br/>     
+             <div>
+                  <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                  <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+               </div><br/>
+               <div>
+                    Have you been to the restaurant?
+                    <input type="radio" name="answer" value="No"/>No
+                    <input type="radio" name="answer" value="Yes"/>Yes    
+               </div><br/>
+               <div>
+                Best days to contact you:    
+                <input type="checkbox" name="Day" value="Monday" 
+                    unchecked/>M
+                    <input type="checkbox" name="Day" value="Tuesday" 
+                    unchecked/>T            
+                    <input type="checkbox" name="Day" value="Wednesday" 
+                    unchecked/>W               
+                    <input type="checkbox" name="Day" value="Thursday" 
+                    unchecked/>H                
+                    <input type="checkbox" name="Day" value="Friday" 
+                    unchecked/>F 
+                </div><br/>
+               <div>
+                   <input type="submit" id="SubmitButton" value="Send Request" />
+               </div>
+        </form>
+        <hr/>
+        <p align="center">
+                44 Seaside Blvd., Oceanside, ME, 03907</p>
+            <p align="center">
+                1-800-245-5227</p>   
+    </body>
+</html>
