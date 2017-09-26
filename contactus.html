@@ -2,28 +2,44 @@
 <html>
     <head>
         <title>Restaurant Site</title>
+        <link rel="stylesheet" href="restaurantstyles.css">
+        <style>
+            form {align-content: center; }
+            select {
+                width: 200px;
+                height: 25px;  
+                border-width: 1px solid; 
+                color: black;
+            }
+            input[type=text]  {
+                width: 200px;
+                height: 20px;  
+                border-width: 1px solid; 
+                color: black;
+                 }
+            textarea {
+                border-width: 1px solid; 
+                color: black;
+            }
+        </style>
     </head>
     <body>
-        <div style="text-align: center"><h1>Bill's Burgers & BBQ</h1></div>
+        <div>
+            <h1>Bill's Burgers & BBQ</h1>
+        </div>
         <hr/>
         <a href="home.html">Home</a> &nbsp &nbsp
         <a href="menu.html">Menu</a> &nbsp &nbsp
         <a href="contactus.html">Contact Us</a>
         <hr/>
-        <form style="text-align: center" action="contactus" method="post">
-            <div>
+        <div class="container">
+            <form>
                 <label id="NameLabel" for="Name">Name: </label>
-                <input id="Name" name="Name" type="text"/>
-            </div><br/>
-            <div>
-                    <label id="EmailLabel" for="Email">Email: </label>
-                    <input id="Email" name="Email" type="text"/>
-                </div><br/>
-            <div>
-                  <label id="PhoneLabel" for="Phone">Phone: </label>
-                   <input id="Phone" name="Phone" type="text"/>
-                </div><br/> 
-            <div>
+                <input id="Name" name="Name" type="text"/> <br/>
+                <label id="EmailLabel" for="Email">Email: </label>
+                <input id="Email" name="Email" type="text"/><br/>
+                <label id="PhoneLabel" for="Phone">Phone: </label>
+                <input id="Phone" name="Phone" type="text"/><br/> 
                 <label id="ReasonLabel" for="Reason">Reason for Inquiry:    </label>
                 <select name="reason">
                     <option value="Catering">Catering</option>
@@ -31,11 +47,10 @@
                     <option value="Feedback">Feedback</option>
                     <option value="Other">Other</option>
                 </select>
-            </div><br/>     
-             <div>
-                  <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
-                  <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
-               </div><br/>
+            <br/>     
+                <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+            <br/>
                <div>
                     Have you been to the restaurant?
                     <input type="radio" name="answer" value="No"/>No
@@ -57,11 +72,12 @@
                <div>
                    <input type="submit" id="SubmitButton" value="Send Request" />
                </div>
-        </form>
+            </form>
+        </div>
         <hr/>
-        <p align="center">
+        <p>
             44 Seaside Blvd., Oceanside, ME, 03907</p>
-        <p align="center">
+        <p>
             1-800-245-5227</p>   
     </body>
 </html>
