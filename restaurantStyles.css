@@ -1,6 +1,14 @@
 div {
+    font-family:Copperplate Gothic Bold; 
     text-align: center;
         }
 p {
     text-align: center;
+}
+th {
+    font-size: larger
+}
+td {
+    font-family:Arial; 
+    text-align: center;  
 }
