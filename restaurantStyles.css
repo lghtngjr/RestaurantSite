@@ -12,3 +12,19 @@ td {
     font-family:Arial; 
     text-align: center;  
 }
+a  {
+    color: blue;
+    font-family: Copperplate Gothic;
+    font-weight: none;
+    text-decoration: underline;   
+      }
+a:visited {
+    color: green;
+      }
+a:hover {
+    font-weight: bold;
+      }
+ a:active {
+    text-decoration: none;
+      }
+}
