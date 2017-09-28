@@ -6,92 +6,118 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="restaurantstyles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <style>
-                body {background-color:lightblue}
-                table {border: 0; align-content: center; padding: 10px; border-spacing: 10px;}
-                tr {text-align: center;}
-            </style>
+        <script>
+            $(document).ready(function()
+            {
+            $('#text-carousel').carousel({
+            interval: 300
+            })
+            }
+            ); 
+        </script> 
+        <script>
+            document.write
+        </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
+        <style>
+            body {background-color:lightblue}
+            table {border: 0; align-content: center; padding: 10px; border-spacing: 10px;}
+            tr {text-align: center;}
+        </style>
     </head>
-    <body>  
-        <div class="container-fluid">
-            <h1>Bill's Burgers & BBQ</h1>
-            <div class="jumbotron">
-            <p>Opening in a new location soon!</p>
-            </div>
-        </div>
-        <hr/>
-        <ul class="nav nav-pills">
-                <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
-                <li class="active"><a href="menu.html">Menu</a> &nbsp &nbsp</li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        <hr>
-        <body>
-            <table class="table">
-                <thead>
-                    <tr>
-                       <th class="col-md-4;">Burger and Fries</th>
-                       <th class="col-md-4;">Brisket Sandwich and Fries</th>
-                       <th class="col-md-4;">Smoked Sausage Sandwich and Fries</th>
-                    </tr>
-                </thead>
-                        <!--<th>Burger and Fries</th>
-                        <th>Brisket Sandwich and Fries</th>
-                        <th>Smoked Sausage Sandwich and Fries</th>
-                    </tr>                
-                </thead>-->
-                <tbody>
-                    <tr>
-                        <td>An American Classic! Your choice - with or without cheese. Pickle, onion, tomato, and lettuce. Served with our famous hand cut french fries and a pickle spear. $6.95</td>
-                        <td>A Taste of Texas! Smoked brisket covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
-                        <td>A Texas favorite! Mesquite smoked sausage sliced and covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
-                    </tr> <br>
-            <table class="table">
-                <thead>
-                    <tr>
-                       <th class="col-md-4;">Pulled Pork Sandwich and Fries</th>
-                       <th class="col-md-4;">Classc BBQ Platter</th>
-                       <th class="col-md-4;">The Works BBQ Platter</th>
-                    </tr>                
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Another Texas favorite! Tender, slow-cooked pork covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and a pickle spear on the side. $7.95</td>
-                        <td>A Texas Classic! Your choice of two meats in our signature BBQ sauce. Served with Texas toast, Cole Slaw, beans and a picle spear. $10.95</td>
-                        <td>A Texas Masterpice! Your choice of three meats in our signature BBQ sauce. Served with Texas toast, Cole Slaw, beans and a picle spear. $12.95</td>
-                    </tr>
-                </tbody>
-            </table> 
-            <table class="table">
-                <thead>
-                    <tr>
-                      <th style="text-align:center; text-decoration:underline;">Beverages</th>
-                    </tr>
-                <tbody>
-                    <tr>
-                        <td>Root Bear</td>
-                        <td>$3.00</td>
-                    </tr>
-                    <tr>
-                        <td>Bottled Water</td>
-                        <td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td>
-                        <td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td>
-                        <td>$1.25</td>
-                    </tr>
-                </tbody>                
-                </thead>
-            </table>
-        </body>
-        <hr/>
-        <p>
-            44 Seaside Blvd., Oceanside, ME, 03907</p>
-        <p>
-            1-800-245-5227</p>
     <body>
+        <div class="container">
+            <h1>Bill's Burgers & BBQ</h1>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#text-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#text-carousel" data-slide-to="1"></li>
+                <li data-target="#text-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="Images/Picture1.jpg" alt="Picture1">
+                    </div>
+                    <div class="item">
+                        <img src="Images/Picture2.jpg" alt="Picture2">
+                    </div>
+                    <div class="item">
+                        <img src="Images/Picture3.jpg" alt="Picture3">
+                    </div>
+                </div> 
+                <hr>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
+                    <li class="active"><a href="menu.html">Menu</a> &nbsp &nbsp</li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4;">Burger and Fries</th>
+                            <th class="col-md-4;">Brisket Sandwich and Fries</th>
+                            <th class="col-md-4;">Smoked Sausage Sandwich and Fries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>An American Classic! Your choice - with or without cheese. Pickle, onion, tomato, and lettuce. Served with our famous hand cut french fries and a pickle spear. $6.95</td>
+                            <td>A Taste of Texas! Smoked brisket covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
+                            <td>A Texas favorite! Mesquite smoked sausage sliced and covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
+                        </tr> <br>
+                    </tbody>
+                </table>     
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-4;">Pulled Pork Sandwich and Fries</th>
+                            <th class="col-md-4;">Classc BBQ Platter</th>
+                            <th class="col-md-4;">The Works BBQ Platter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Another Texas favorite! Tender, slow-cooked pork covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and a pickle spear on the side. $7.95</td>
+                            <td>A Texas Classic! Your choice of two meats in our signature BBQ sauce. Served with Texas toast, Cole Slaw, beans and a picle spear. $10.95</td>
+                            <td>A Texas Masterpice! Your choice of three meats in our signature BBQ sauce. Served with Texas toast, Cole Slaw, beans and a picle spear. $12.95</td>
+                        </tr>
+                    </tbody>
+                </table> 
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center; text-decoration:underline;">Beverages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Root Bear</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bottled Water</td>
+                            <td>$1.25</td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>$1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>$1.25</td>
+                        </tr>
+                    </tbody>                
+                </table>
+                <hr>    
+                <p>
+                    44 Seaside Blvd., Oceanside, ME, 03907</p>
+                <p>
+                    1-800-245-5227</p>
+        </div>    
+    </body>
+</html>

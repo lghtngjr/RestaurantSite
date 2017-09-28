@@ -6,87 +6,120 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="restaurantstyles.css">
-            <style>
-                form {
-                    font-family:Arial; font-weight: bold;
-                    align-content: center; }
-                select {
-                    width: 200px;
-                    height: 25px;  
-                    border-width: 1px solid; 
-                    color: black;
-                    }
-                input[type=text]  {
-                    width: 200px;
-                    height: 20px;  
-                    border-width: 1px solid; 
-                    color: black;
-                    }
-                textarea {
-                    border-width: 1px solid; 
-                    color: black;
-                    }
-            </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+            $('#text-carousel').carousel({
+            interval: 300
+            })
+            }
+            ); 
+        </script> 
+        <script>
+            document.write
+        </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
+        <style>
+            form {
+                font-family:Arial; font-weight: bold;
+                align-content: center; }
+            select {
+                width: 200px;
+                height: 25px;  
+                border-width: 1px solid; 
+                color: black;
+                }
+            input[type=text]  {
+                width: 200px;
+                height: 20px;  
+                border-width: 1px solid; 
+                color: black;
+                }
+            textarea {
+                border-width: 1px solid; 
+                color: black;
+                }
+        </style>
     </head>
     <body>
         <div class="container">
             <h1>Bill's Burgers & BBQ</h1>
-            <div class="jumbotron">
-            <p>Opening in a new location soon!</p>
-        </div>
-        <hr/>
-        <ul class="nav nav-pills">
-                <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
-                <li><a href="menu.html">Menu</a> &nbsp &nbsp</li>
-                <li class="active"><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        <hr/>
-        <div class="container">
-            <form>
-                <label id="NameLabel" for="Name">Name: </label>
-                <input id="Name" name="Name" type="text"/> <br/>
-                <label id="EmailLabel" for="Email">Email: </label>
-                <input id="Email" name="Email" type="text"/><br/>
-                <label id="PhoneLabel" for="Phone">Phone: </label>
-                <input id="Phone" name="Phone" type="text"/><br/> 
-                <label id="ReasonLabel" for="Reason">Reason for Inquiry:    </label>
-                <select name="reason">
-                    <option value="Catering">Catering</option>
-                    <option value="PrivateParty">Private Party</option>
-                    <option value="Feedback">Feedback</option>
-                    <option value="Other">Other</option>
-                </select>
-            <br/>     
-                <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
-                <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
-            <br/>
-               <div>
-                    Have you been to the restaurant?
-                    <input type="radio" name="answer" value="No"/>No
-                    <input type="radio" name="answer" value="Yes"/>Yes    
-               </div><br/>
-               <div>
-                Best days to contact you:    
-                <input type="checkbox" name="Day" value="Monday" 
-                    unchecked/>M
-                    <input type="checkbox" name="Day" value="Tuesday" 
-                    unchecked/>T            
-                    <input type="checkbox" name="Day" value="Wednesday" 
-                    unchecked/>W               
-                    <input type="checkbox" name="Day" value="Thursday" 
-                    unchecked/>H                
-                    <input type="checkbox" name="Day" value="Friday" 
-                    unchecked/>F 
-                </div><br/>
-               <div>
-                   <input type="submit" id="SubmitButton" value="Send Request" />
-               </div>
-            </form>
-        </div>
-        <hr/>
-        <p>
-            44 Seaside Blvd., Oceanside, ME, 03907</p>
-        <p>
-            1-800-245-5227</p>   
-    </body>
+            <div id="text-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#text-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#text-carousel" data-slide-to="1"></li>
+                    <li data-target="#text-carousel" data-slide-to="2"></li>
+                </ol>
+            <!-- Wrapper for slides -->
+            <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="Images/Picture1.jpg" alt="Picture1">
+                    </div>
+                    <div class="item">
+                        <img src="Images/Picture2.jpg" alt="Picture2">
+                    </div>
+                    <div class="item">
+                        <img src="Images/Picture3.jpg" alt="Picture3">
+                    </div>
+                </div>      
+                <hr>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
+                    <li><a href="menu.html">Menu</a> &nbsp &nbsp</li>
+                    <li class="active"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <hr>
+                <form>
+                        <label id="NameLabel" for="Name">Name: </label>
+                        <input id="Name" name="Name" type="text"/> <br>
+                        <label id="EmailLabel" for="Email">Email: </label>
+                        <input id="Email" name="Email" type="text"/><br>
+                        <label id="PhoneLabel" for="Phone">Phone: </label>
+                        <input id="Phone" name="Phone" type="text"/><br> 
+                        <label id="ReasonLabel" for="Reason">Reason for Inquiry:    </label>
+                        <select name="reason">
+                        <option value="Catering">Catering</option>
+                        <option value="PrivateParty">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                        </select>
+                        <br>     
+                        <label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label>
+                        <textarea id="AdditionalInfo" name="AdditionalInfo"></textarea>
+                        <br>
+                    <div>
+                        Have you been to the restaurant?
+                        <input type="radio" name="answer" value="No"/>No
+                        <input type="radio" name="answer" value="Yes"/>Yes    
+                    </div>
+                    <br>
+                    <div>
+                        Best days to contact you:    
+                        <input type="checkbox" name="Day" value="Monday" 
+                            unchecked/>M
+                        <input type="checkbox" name="Day" value="Tuesday" 
+                            unchecked/>T            
+                        <input type="checkbox" name="Day" value="Wednesday" 
+                            unchecked/>W               
+                        <input type="checkbox" name="Day" value="Thursday" 
+                            unchecked/>H                
+                        <input type="checkbox" name="Day" value="Friday" 
+                            unchecked/>F 
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" id="SubmitButton" value="Send Request" />
+                    </div>
+                </form>
+                <hr>    
+                    <p>
+                        44 Seaside Blvd., Oceanside, ME, 03907</p>
+                    <p>
+                        1-800-245-5227</p> 
+        </dir>   
+    </body>  
 </html>
