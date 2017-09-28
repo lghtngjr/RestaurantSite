@@ -4,27 +4,27 @@ div {
         }
 p {
     text-align: center;
-}
-th {
-    font-size: larger
-}
+        }
+th class {
+    font-size: larger;
+    text-align: center;  
+        }
 td {
     font-family:Arial; 
-    text-align: center;  
+    text-align:center;  
 }
 a  {
-    color: blue;
-    font-family: Copperplate Gothic;
-    font-weight: none;
-    text-decoration: underline;   
+    color:blue;
+    font-family:Copperplate Gothic;
+    font-weight:none;
+    text-decoration:underline;   
       }
 a:visited {
-    color: green;
+    color:green;
       }
 a:hover {
-    font-weight: bold;
+    font-weight:bold;
       }
  a:active {
-    text-decoration: none;
+    text-decoration:none;
       }
-}

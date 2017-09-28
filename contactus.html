@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Restaurant Site</title>
+        <title>Restaurant Site with Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="restaurantstyles.css">
-        <style>
-            form {
-                font-family:Arial; font-weight: bold;
-                align-content: center; }
-            select {
-                width: 200px;
-                height: 25px;  
-                border-width: 1px solid; 
-                color: black;
-            }
-            input[type=text]  {
-                width: 200px;
-                height: 20px;  
-                border-width: 1px solid; 
-                color: black;
-                 }
-            textarea {
-                border-width: 1px solid; 
-                color: black;
-            }
-        </style>
+            <style>
+                form {
+                    font-family:Arial; font-weight: bold;
+                    align-content: center; }
+                select {
+                    width: 200px;
+                    height: 25px;  
+                    border-width: 1px solid; 
+                    color: black;
+                    }
+                input[type=text]  {
+                    width: 200px;
+                    height: 20px;  
+                    border-width: 1px solid; 
+                    color: black;
+                    }
+                textarea {
+                    border-width: 1px solid; 
+                    color: black;
+                    }
+            </style>
     </head>
     <body>
-        <div>
+        <div class="container">
             <h1>Bill's Burgers & BBQ</h1>
+            <div class="jumbotron">
+            <p>Opening in a new location soon!</p>
         </div>
         <hr/>
-        <a href="home.html">Home</a> &nbsp &nbsp
-        <a href="menu.html">Menu</a> &nbsp &nbsp
-        <a href="contactus.html">Contact Us</a>
+        <ul class="nav nav-pills">
+                <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
+                <li><a href="menu.html">Menu</a> &nbsp &nbsp</li>
+                <li class="active"><a href="contactus.html">Contact Us</a></li>
+            </ul>
         <hr/>
         <div class="container">
             <form>

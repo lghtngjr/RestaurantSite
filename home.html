@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Restaurant Site</title>
+        <title>Restaurant Site with Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="restaurantstyles.css">
     </head>
     <body>
-        <div>
+        <div class="container-fluid">
             <h1>Bill's Burgers & BBQ</h1>
+            <div class="jumbotron">
+            <p>Opening in a new location soon!</p>
         </div>
         <hr/>
-        <a href="home.html">Home</a> &nbsp &nbsp
-        <a href="menu.html">Menu</a> &nbsp &nbsp
-        <a href="contactus.html">Contact Us</a>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
+            <li><a href="menu.html">Menu</a> &nbsp &nbsp</li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
         <hr/>
-        <div style="background-color:lightblue;">
+    <div style="background-color:lightblue;">
             <img style="width: 600px;height: 200px" 
             src="images/BBQnBurger.jpg">
         <br/>
+    <div class="row">
+        <div class="col-md-12;">
         <p>
             Bill's began in his backyard in Texas many years ago! He brought his recipes to New England over 15 years ago.     
         </p>
@@ -24,7 +33,7 @@
             After friends and family raved about his great recipes he decided to open a restaurant where all could enjoy!</p>  
         <p>
             Every burger, shake, and fry at his Oceanside, Maine location is made fresh daily.</p>  
-        </div>
+    </div>
         <hr/>
         <p>
             44 Seaside Blvd., Oceanside, ME, 03907</p>

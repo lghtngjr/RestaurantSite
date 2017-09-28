@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Restaurant Site</title>
+        <title>Restaurant Site with Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="restaurantstyles.css">
-        <style>
-            body {background-color:lightblue}
-            table {border: 0; align-content: center; padding: 10px; border-spacing: 10px;}
-            tr {text-align: center;}
-        </style>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <style>
+                body {background-color:lightblue}
+                table {border: 0; align-content: center; padding: 10px; border-spacing: 10px;}
+                tr {text-align: center;}
+            </style>
     </head>
     <body>  
-        <div>
+        <div class="container-fluid">
             <h1>Bill's Burgers & BBQ</h1>
+            <div class="jumbotron">
+            <p>Opening in a new location soon!</p>
+            </div>
         </div>
         <hr/>
-        <a href="home.html">Home</a> &nbsp &nbsp
-        <a href="menu.html">Menu</a> &nbsp &nbsp
-        <a href="contactus.html">Contact Us</a>
+        <ul class="nav nav-pills">
+                <li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a> &nbsp &nbsp</li>
+                <li class="active"><a href="menu.html">Menu</a> &nbsp &nbsp</li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
         <hr>
         <body>
-            <!--<Div>-->
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>Burger and Fries</th>
+                       <th class="col-md-4;">Burger and Fries</th>
+                       <th class="col-md-4;">Brisket Sandwich and Fries</th>
+                       <th class="col-md-4;">Smoked Sausage Sandwich and Fries</th>
+                    </tr>
+                </thead>
+                        <!--<th>Burger and Fries</th>
                         <th>Brisket Sandwich and Fries</th>
                         <th>Smoked Sausage Sandwich and Fries</th>
                     </tr>                
-                </thead>
+                </thead>-->
                 <tbody>
                     <tr>
                         <td>An American Classic! Your choice - with or without cheese. Pickle, onion, tomato, and lettuce. Served with our famous hand cut french fries and a pickle spear. $6.95</td>
                         <td>A Taste of Texas! Smoked brisket covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
                         <td>A Texas favorite! Mesquite smoked sausage sliced and covered in our signature BBQ sauce. Served on a toasted, Texas-sized bun with our famous hand cut french fries, cole slaw and and a pickle spear on the side. $7.95</td>
-                        </tr> <br>
+                    </tr> <br>
+            <table class="table">
                 <thead>
-                     <tr>
-                       <th>Pulled Pork Sandwich and Fries</th>
-                       <th>Classc BBQ Platter</th>
-                       <th>The Works BBQ Platter</th>
-                      </tr>                
+                    <tr>
+                       <th class="col-md-4;">Pulled Pork Sandwich and Fries</th>
+                       <th class="col-md-4;">Classc BBQ Platter</th>
+                       <th class="col-md-4;">The Works BBQ Platter</th>
+                    </tr>                
                 </thead>
                 <tbody>
                     <tr>
@@ -49,32 +63,31 @@
                     </tr>
                 </tbody>
             </table> 
-            <table>
+            <table class="table">
                 <thead>
-                        <tr>
-                            <th style="text-decoration:underline;">Beverages</th>
-                        </tr>
-                    <tbody>
-                        <tr>
-                            <td>Root Bear</td>
-                            <td>$3.00</td>
-                        </tr>
-                        <tr>
-                            <td>Bottled Water</td>
-                            <td>$1.25</td>
-                        </tr>
-                        <tr>
-                            <td>Lemonade</td>
-                            <td>$1.00</td>
-                        </tr>
-                        <tr>
-                            <td>Iced Tea</td>
-                            <td>$1.25</td>
-                        </tr>
-                    </tbody>                
+                    <tr>
+                      <th style="text-align:center; text-decoration:underline;">Beverages</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Root Bear</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>                
                 </thead>
             </table>
-            <!--</Div>-->
         </body>
         <hr/>
         <p>
